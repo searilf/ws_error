@@ -1,7 +1,9 @@
 ---
 - hosts: all
   tasks:
-  - name: Please error
-    file:
-      path: i don't know
-      state: directory
+  - name: Creating a file with content
+    copy:
+      dest: "/your path"
+      content: |
+        line 01
+        line 02
